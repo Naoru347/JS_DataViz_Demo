@@ -1,0 +1,14 @@
+* {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif !important;
+    color:#2d2d2d;
+    text-align: center;
+}
+img.logo{
+    position: fixed;
+    max-width: 10%;
+    max-height: auto;
+}
