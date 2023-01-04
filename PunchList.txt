@@ -1,0 +1,9 @@
+--git repo for code
+--dummy HTML space for testing presentation layer
+--CSS for dummy HTML space
+--CSS for Chart.js component
+--dummy JSON data file
+--JS to build table 
+--JS to build chart with Chart.js integration
+--Document (onging)
+--Share with client
