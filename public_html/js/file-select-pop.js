@@ -13,3 +13,8 @@ window.onclick = function(event){
         }
     }
 }
+function test(){
+    var el = document.getElementById("testContent");
+    el.textContent = "this test was successful";
+    
+}
