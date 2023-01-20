@@ -16,13 +16,17 @@ I then proceeded to clearify certain points with the client, asking questions to
 
 From there, I started by making the HTML and CSS to govern the test space that I would be using as a demonstration platform to show the client the finished code. This involved creating a mock-up space in HTML to display the output of the various components, as well as a main CSS file to hold the standard formatting/display rules for the mock-up space. 
 
-My next step was to create some dummy data in a JSON format. This involved using the columns as my keys and the row data as my values (key:value pairs), such that: "{"T1": 10, "T2": 20,...} for each row of my demo table. I then expanded this across three files for testing the app to ensure it properly updates. 
+My next step was to create some dummy data in a JSON format. This involved using the columns as my keys and the row data as my values (key:value pairs), such that: "{"T1": 10, "T2": 20,...} for each row of my demo table. The key, representing the time-series, will be used for column headers in the final table, the values will be the data that populates cells down that column. I then expanded this across three files for testing the app to ensure it properly updates. Further, I created one file of very small numbers, between 1 and 0, and one of very large numbers between 1 and 10,000 to test to ensure that labels and scales update correctly.
 
 To further facilitate this, I added an drop-down select box to the presentation layer to select from three different data files. This is driven by CSS to style the element and hide the sub-elements until hover over, and JS to present the hidden elements and to drive the on-click evens using event listeners. 
 
+To facilitate testing of the scripts that run the logic layer and how they will interface with presentation layer elements, I then installed the LiveServer extention in VSCode. This allows me to test without building out my own webserver environment (decreasing reliance on Node.js) and without running into security issues associated with simplying opening the presentation layer files using file protocol in a web browser (CORS errors in particular).
+
+From there, I started a second script (data-viz.js) to run the actual logic layer of the app. This script will...
 A.1.) Technologies Used
 ---Git: version control
 ---HTML: presentation layer
 ----CSS: presentation layer
 ---JS: APP logic
 ----Chart.js: Data Visualization
+---LiveServer: testing

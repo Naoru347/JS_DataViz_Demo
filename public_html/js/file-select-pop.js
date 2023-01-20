@@ -15,6 +15,12 @@ window.onclick = function(event){
 }
 function test(){
     var el = document.getElementById("testContent");
-    el.textContent = "this test was successful";
+    el.textContent = "this test was successful from location 1, printing to test space 1";
+    
+}
+
+function test2(){
+    var el = document.getElementById("testContent");
+    el.textContent = "this test was successful from location1, printing to test space 2.";
     
 }
