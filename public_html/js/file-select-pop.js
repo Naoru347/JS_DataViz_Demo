@@ -24,3 +24,9 @@ function test2(){
     el.textContent = "this test was successful from location1, printing to test space 2.";
     
 }
+
+function test3(){
+    var el = document.getElementById("testContent");
+    el.textContent = "this test was successful from location1, printing to test space 3.";
+    
+}
