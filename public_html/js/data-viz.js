@@ -79,12 +79,12 @@ function createHistogram(data, histogramCanvas) {
         options: {
             scales: {
                 y: {
-                    beginAtZero: true,
+                    beginAtZero: false,
                 },
             },
-            indexAxis: 'y',
+            indexAxis: 'x',
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
         },
     });
 }
