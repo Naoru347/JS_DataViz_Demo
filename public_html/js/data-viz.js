@@ -1,18 +1,18 @@
 async function getData1(file) {
-    let holder = await fetch('../jsonData/data1.json');
+    let holder = await fetch('./jsonData/data1.json');
     const data = await holder.json();
     console.log(data);
     createTable(data);
 }
 async function getData2(file) {
-    let holder = await fetch('../jsonData/data2.json');
+    let holder = await fetch('./jsonData/data2.json');
     const data = await holder.json();
     console.log(data);
     createTable(data);
 }
 
 async function getData3(file){
-    let holder = await fetch('../jsonData/data3.json');
+    let holder = await fetch('./jsonData/data3.json');
     const data = await holder.json();
     console.log(data);
     createTable(data);
